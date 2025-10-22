@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashravan's Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .file-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .file-item {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Ashravan's Journey</h1>
+    <p>This site contains a series of files that explore themes of morality, fantasy, and personal identity. Click on the links below to explore each file.</p>
+    
+    <ul class="file-list">
+        <li class="file-item"><a href="ashravan.txt" target="_blank">ashravan.txt</a> - A short story about Ashravan.</li>
+        <li class="file-item"><a href="dilemma.json" target="_blank">dilemma.json</a> - An ethical dilemma facing an autonomous vehicle.</li>
+        <li class="file-item"><a href="about.md" target="_blank">about.md</a> - A brief description of myself in three words.</li>
+        <li class="file-item"><a href="pelican.svg" target="_blank">pelican.svg</a> - An SVG image of a pelican riding a bicycle.</li>
+        <li class="file-item"><a href="restaurant.json" target="_blank">restaurant.json</a> - Restaurant recommendations in Delhi.</li>
+        <li class="file-item"><a href="prediction.json" target="_blank">prediction.json</a> - Forecast of the Fed Funds rate for December 2025.</li>
+        <li class="file-item"><a href="uid.txt" target="_blank">uid.txt</a> - A unique identifier upload.</li>
+    </ul>
+
+    <script>
+        // Load and display contents of uid.txt for verification
+        fetch('uid.txt')
+            .then(response => response.text())
+            .then(data => {
+                console.log("UID Content:", data);
+            });
+
+        // Sample ethics dilemma reasoning
+        const dilemma = {
+            people: 3,
+            case_1: {
+                swerve: true,
+                reason: "The vehicle swerves to hit 1 person instead of continuing to hit 2 people, valuing the greater number of lives."
+            },
+            case_2: {
+                swerve: false,
+                reason: "In this scenario, the 2 people are criminals while the 1 person is a child, raising moral complexity."
+            }
+        };
+
+        console.log("Dilemma Cases:", dilemma);
+    </script>
+</body>
+</html>
